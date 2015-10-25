@@ -1,15 +1,29 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true,
+  "views": [
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "homeView",
+      "components": [],
+      "title": "Designer View",
+      "addToNavigation": true,
+      "icon": "edit"
+    }
+  ],
   "dataProviders": [
     {
-      "type": "dataProvider",
-      "title": "DefaultProvider",
+      "type": "kendo-ui-mobile:dataProvider",
       "name": "defaultProvider",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
+      "title": "DefaultProvider",
       "source": "everlive",
-      "offlineStorage": true,
       "everliveKey": "zaXw8H0sTlOGZnOx",
-      "everliveUrl": ""
+      "offlineStorage": true
     }
-  ]
+  ],
+  "name": "kendoUiMobileApp",
+  "navigation": "tabstrip",
+  "view": "homeView",
+  "transition": "slide",
+  "skin": "flat"
 }
