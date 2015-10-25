@@ -8,6 +8,32 @@
       "title": "Designer View",
       "addToNavigation": true,
       "icon": "edit"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "dataListView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:list",
+          "name": "dataListViewModel",
+          "dataProvider": "defaultProvider",
+          "collection": "Activities",
+          "imageField": "Picture",
+          "headerField": "Text",
+          "subHeaderField": "Likes",
+          "group": "Comment",
+          "masterDetails": true,
+          "detailHeaderField": "Picture",
+          "detailSubHeaderField": "Text",
+          "detailDescriptionField": "Text",
+          "detailImageField": "Likes",
+          "pullToRefresh": true,
+          "endlessScroll": true
+        }
+      ],
+      "title": "Data List",
+      "addToNavigation": true,
+      "icon": "search"
     }
   ],
   "dataProviders": [
@@ -22,8 +48,7 @@
     }
   ],
   "name": "kendoUiMobileApp",
-  "navigation": "tabstrip",
-  "view": "homeView",
-  "transition": "slide",
+  "navigation": "listmenu",
+  "transition": "overlay",
   "skin": "flat"
 }
