@@ -1,0 +1,48 @@
+{
+  "ProjectName": "ShirtDesigner",
+  "ProjectGuid": "602e86e0-8244-4341-9f80-22032fcc7227",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.ShirtDesigner",
+  "DisplayName": "ShirtDesigner",
+  "Author": "",
+  "Description": "ShirtDesigner",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{48a91db6-9819-4577-bc84-03fd207e4bcc}",
+  "WP8ProductID": "{1ecac427-fd52-4873-94b1-b22df933aca7}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.ShirtDesigner",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "CorePlugins": [
+    "org.apache.cordova.network-information"
+  ]
+}
