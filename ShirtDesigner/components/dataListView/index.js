@@ -98,5 +98,6 @@ app.dataListView = kendo.observable({
     parent.set('dataListViewModel', dataListViewModel);
 })(app.dataListView);
 
+
 // START_CUSTOM_CODE_dataListViewModel
 // END_CUSTOM_CODE_dataListViewModel
