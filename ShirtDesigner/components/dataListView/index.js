@@ -66,13 +66,22 @@ app.dataListView = kendo.observable({
                             field: 'Text',
                             defaultValue: ''
                         },
+                        'Likes': {
+                            field: 'Likes',
+                            defaultValue: ''
+                        },
                         'Picture': {
                             field: 'Picture',
                             defaultValue: ''
                         },
+                    },
+                    icon: function() {
+                        var i = 'globe';
+                        return kendo.format('km-icon km-{0}', i);
                     }
                 }
             },
+            serverFiltering: true,
             serverSorting: true,
             serverPaging: true,
             pageSize: 50
@@ -87,6 +96,7 @@ app.dataListView = kendo.observable({
                 var item = e.view.params.uid,
                     dataSource = dataListViewModel.get('dataSource'),
                     itemModel = dataSource.getByUid(item);
+                itemModel.LikesUrl = processImage(itemModel.Likes);
                 if (!itemModel.Picture) {
                     itemModel.Picture = String.fromCharCode(160);
                 }
@@ -97,7 +107,6 @@ app.dataListView = kendo.observable({
 
     parent.set('dataListViewModel', dataListViewModel);
 })(app.dataListView);
-
 
 // START_CUSTOM_CODE_dataListViewModel
 // END_CUSTOM_CODE_dataListViewModel

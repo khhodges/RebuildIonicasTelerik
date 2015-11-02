@@ -9,11 +9,11 @@
         $(function() {
             app.mobileApp = new kendo.mobile.Application(document.body, {
 
-                // you can change the default transition (slide, zoom or fade)
-                transition: 'overlay',
                 // comment out the following line to get a UI which matches the look
                 // and feel of the operating system
                 skin: 'flat',
+                // the application needs to know which view to load first
+                initial: 'components/shirtSelection/view.html',
                 statusBarStyle: 'black-translucent'
             });
         });
@@ -62,25 +62,6 @@
             return navigator.connection.type !== 'none';
         }
     };
-    
-    
-     app.anotherListView =  function initListView() {
-            var ds = new kendo.data.DataSource({
-                transport: {
-                    read: {
-                        url: "https://bs1.cdn.telerik.com/v1/zaXw8H0sTlOGZnOx/b4fd5bd0-7b19-11e5-b9e7-99804654be7b",
-                        dataType: "json"
-                    }
-                },
-                change: function() {
-                    debugger;
-                }
-            });
-            $("#listview").kendoMobileListView({
-                dataSource: ds,
-                template: "#:name#"
-            });
-        };
 }());
 
 // START_CUSTOM_CODE_kendoUiMobileApp

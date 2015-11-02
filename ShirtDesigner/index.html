@@ -19,22 +19,19 @@
 </head>
 
 <body id="kendoUiMobileApp">
+    <script src="components/authenticationView/index.js"></script>
     <script src="components/shirtSelection/index.js"></script>
     <script src="components/dataListView/index.js"></script>
     <script src="components/homeView/index.js"></script>
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
-                <a data-role="backbutton" data-align="left">Back</a>
-                <span data-role="view-title">Muddy Waters</span>
-                <a data-align="right" data-role="button" class="nav-button" href="#/">Index</a>
+                <span data-role="view-title"></span>
+                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
             </div>
         </header>
 
-        <!-- Shirt-Design-kjhh application views will be rendered here -->
-
-        <footer data-role="footer">
-        </footer>
+        <!-- application views will be rendered here -->
     </div>
 
     <div data-role="layout" data-id="main-nonav">
@@ -45,15 +42,17 @@
         </header>
 
         <!-- application views will be rendered here -->
-
-        <footer data-role="footer">
-        </footer>
     </div>
 
-    <div data-role="view" data-layout="main" data-title="Index">
-        <ul id="navigation-container" data-role="listview" data-style="inset">
+    <div id="appDrawer" data-role="drawer" data-title="Navigation">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+        <ul id="navigation-container" data-role="listview">
             <li><a href="components/homeView/view.html" data-icon="edit">Designer View</a></li>
-            <li><a href="components/dataListView/view.html" data-icon="search">Data List</a></li>
+            <li><a href="components/dataListView/view.html" data-icon="search">Activity List</a></li>
             <li><a href="components/shirtSelection/view.html" data-icon="contacts">Shirt Selection</a></li>
         </ul>
     </div>
