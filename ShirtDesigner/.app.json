@@ -34,7 +34,7 @@
           "type": "kendo-ui-mobile:about",
           "name": "homeViewModel",
           "appName": "Muddy Waters",
-          "appVersion": "(954) 428-6577 - 2237 W Hillsboro Blvd, 33442, muddywatersrestaurant.com",
+          "appVersion": "(954) 428-6577",
           "appIcon": "muddy-waters-logo3.jpg",
           "appDescription": "Become a Loyalty Royalty member. It is easy and rewarding!!!\n                    Click Join and the next time you dine-in we will activate your Muddy Waters Loyalty Royalty card and start acquiring points for food and beverage purchases.\n                    Find out more below...",
           "contactButton": true,
