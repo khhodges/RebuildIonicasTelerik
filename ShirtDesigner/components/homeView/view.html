@@ -1,4 +1,28 @@
-<div data-role="view" data-title="Designer View" data-layout="main" data-model="app.homeView" data-show="app.homeView.onShow" data-after-show="app.homeView.afterShow">
+<div data-role="view" data-title="Loyalty Club" data-layout="main" data-model="app.homeView" data-show="app.homeView.onShow" data-after-show="app.homeView.afterShow">
+    <div class="about-view" data-bind="invisible:error">
+        <div class="icon-group">
+
+            <div class="app-icon">
+                <img src="resources/muddy-waters-logo3.jpg">
+            </div>
+
+
+            <div class="app-details">
+                <h2>Muddy Waters</h2>
+                <h4>(954) 428-6577 - 2237 W Hillsboro Blvd, 33442, muddywatersrestaurant.com</h4>
+            </div>
+        </div>
+
+        <p>Become a Loyalty Royalty member. It is easy and rewarding!!! Click Join and the next time you dine-in we will activate your Muddy Waters Loyalty Royalty card and start acquiring points for food and beverage purchases. Find out more below...</p>
+
+        <div class="button-group button-group-vertical">
+            <a data-role="button" data-rel="external" href="mailto:support@on2t.com">Contact us</a>
+            <a data-role="button" data-rel="external" href="#" onclick="app.homeView.homeViewModel.openLink('https://www.facebook.com/muddywatersrestaurant');">Find us on Facebook</a>
+            <a data-role="button" data-rel="external" href="#" onclick="app.homeView.homeViewModel.openLink('https://twitter.com/JbyrdMuddyWater');">Track me on Twitter</a>
+        </div>
+        <!-- START_CUSTOM_CODE_homeViewModel -->
+        <!-- END_CUSTOM_CODE_homeViewModel -->
+    </div>
     <!-- START_CUSTOM_CODE_homeView -->
     <!-- END_CUSTOM_CODE_homeView -->
 </div>

@@ -66,10 +66,6 @@ app.dataListView = kendo.observable({
                             field: 'Text',
                             defaultValue: ''
                         },
-                        'Likes': {
-                            field: 'Likes',
-                            defaultValue: ''
-                        },
                         'Picture': {
                             field: 'Picture',
                             defaultValue: ''
@@ -96,9 +92,9 @@ app.dataListView = kendo.observable({
                 var item = e.view.params.uid,
                     dataSource = dataListViewModel.get('dataSource'),
                     itemModel = dataSource.getByUid(item);
-                itemModel.LikesUrl = processImage(itemModel.Likes);
-                if (!itemModel.Picture) {
-                    itemModel.Picture = String.fromCharCode(160);
+                itemModel.PictureUrl = processImage(itemModel.Picture);
+                if (!itemModel.Text) {
+                    itemModel.Text = String.fromCharCode(160);
                 }
                 dataListViewModel.set('currentItem', itemModel);
             },

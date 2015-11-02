@@ -3,49 +3,6 @@
   "views": [
     {
       "type": "kendo-ui-mobile:view",
-      "name": "homeView",
-      "components": [],
-      "title": "Designer View",
-      "addToNavigation": true,
-      "icon": "edit"
-    },
-    {
-      "type": "kendo-ui-mobile:view",
-      "name": "dataListView",
-      "components": [
-        {
-          "type": "kendo-ui-mobile:list",
-          "name": "dataListViewModel",
-          "dataProvider": "defaultProvider",
-          "collection": "Activities",
-          "iconField": true,
-          "imageField": "Picture",
-          "headerField": "Text",
-          "subHeaderField": "Likes",
-          "filterField": "Text",
-          "masterDetails": true,
-          "detailHeaderField": "Picture",
-          "detailSubHeaderField": "Text",
-          "detailDescriptionField": "Likes",
-          "detailImageField": "Likes",
-          "pullToRefresh": true,
-          "endlessScroll": true
-        }
-      ],
-      "title": "Activity List",
-      "addToNavigation": true,
-      "icon": "search"
-    },
-    {
-      "type": "kendo-ui-mobile:view",
-      "name": "shirtSelection",
-      "components": [],
-      "title": "Shirt Selection",
-      "addToNavigation": true,
-      "icon": "contacts"
-    },
-    {
-      "type": "kendo-ui-mobile:view",
       "name": "authenticationView",
       "components": [
         {
@@ -68,6 +25,64 @@
       ],
       "title": "Authentication",
       "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "homeView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:about",
+          "name": "homeViewModel",
+          "appName": "Muddy Waters",
+          "appVersion": "(954) 428-6577 - 2237 W Hillsboro Blvd, 33442, muddywatersrestaurant.com",
+          "appIcon": "muddy-waters-logo3.jpg",
+          "appDescription": "Become a Loyalty Royalty member. It is easy and rewarding!!!\n                    Click Join and the next time you dine-in we will activate your Muddy Waters Loyalty Royalty card and start acquiring points for food and beverage purchases.\n                    Find out more below...",
+          "contactButton": true,
+          "contactLabel": "Contact us",
+          "contactMail": "support@on2t.com",
+          "facebookButton": true,
+          "facebookLabel": "Find us on Facebook",
+          "facebookLink": "https://www.facebook.com/muddywatersrestaurant",
+          "twitterButton": true,
+          "twitterLabel": "Track me on Twitter",
+          "twitterLink": "https://twitter.com/JbyrdMuddyWater"
+        }
+      ],
+      "title": "Loyalty Club",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "dataListView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:list",
+          "name": "dataListViewModel",
+          "dataProvider": "defaultProvider",
+          "collection": "Activities",
+          "iconField": true,
+          "imageField": "Picture",
+          "headerField": "Text",
+          "filterField": "Text",
+          "masterDetails": true,
+          "detailSubHeaderField": "Text",
+          "detailImageField": "Picture",
+          "pullToRefresh": true,
+          "endlessScroll": true
+        }
+      ],
+      "title": "Activity List",
+      "addToNavigation": true,
+      "icon": "search"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "shirtSelection",
+      "components": [],
+      "title": "Shirt Selection",
+      "addToNavigation": true,
+      "icon": "contacts"
     }
   ],
   "dataProviders": [
@@ -83,6 +98,6 @@
   ],
   "name": "kendoUiMobileApp",
   "navigation": "drawer",
-  "view": "shirtSelection",
+  "view": "homeView",
   "skin": "flat"
 }
