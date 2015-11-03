@@ -3,31 +3,6 @@
   "views": [
     {
       "type": "kendo-ui-mobile:view",
-      "name": "authenticationView",
-      "components": [
-        {
-          "type": "kendo-ui-mobile:authentication",
-          "name": "authenticationViewModel",
-          "dataProvider": "defaultProvider",
-          "emailLabel": "Email",
-          "passwordLabel": "Password",
-          "signinLabel": "Sign In",
-          "signinRedirect": "homeView",
-          "enableRegistration": true,
-          "gotoRegisterLabel": "Register",
-          "registerEmailLabel": "Email",
-          "registerPasswordLabel": "Password",
-          "registerNameLabel": "Name",
-          "registerLabel": "Register",
-          "registerRedirect": "homeView",
-          "gotoSigninLabel": "Sign In"
-        }
-      ],
-      "title": "Authentication",
-      "addToNavigation": false
-    },
-    {
-      "type": "kendo-ui-mobile:view",
       "name": "homeView",
       "components": [
         {
@@ -38,8 +13,8 @@
           "appIcon": "muddy-waters-logo3.jpg",
           "appDescription": "Become a Loyalty Royalty member. It is easy and rewarding!!!\n                    Click Join and the next time you dine-in we will activate your Muddy Waters Loyalty Royalty card and start acquiring points for food and beverage purchases.\n                    Find out more below...",
           "contactButton": true,
-          "contactLabel": "Contact us",
-          "contactMail": "support@example.com",
+          "contactLabel": "Log In",
+          "contactMail": "muddywaters@on2t.com",
           "facebookButton": true,
           "facebookLabel": "Find us on Facebook",
           "facebookLink": "https://www.facebook.com/muddywatersrestaurant",
@@ -72,7 +47,7 @@
           "endlessScroll": true
         }
       ],
-      "title": "Activity List",
+      "title": "Activities and Events",
       "addToNavigation": true,
       "icon": "search"
     },
@@ -80,9 +55,142 @@
       "type": "kendo-ui-mobile:view",
       "name": "shirtSelection",
       "components": [],
-      "title": "Shirt Selection",
+      "title": "Products",
       "addToNavigation": true,
       "icon": "contacts"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "contacts",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:about",
+          "name": "contactsModel",
+          "appName": "Visit Muddy Waters",
+          "appVersion": "Telephone : 954-428-6577",
+          "appIcon": "muddy-waters-logo2.jpg",
+          "appDescription": "The best lobster, fresh seafood and the island vibe. With two separate dining areas, two unique bars, privacy or social interaction and Muddy's outside covered patio seating.\nW. HIllsboro Blvd.\nDeerfield, FL 33442\n\n\n\nFood: 11 a.m. – 10 p.m.\nWith a bar open till 2 A.M.",
+          "contactButton": false,
+          "facebookButton": true,
+          "facebookLabel": "Home Page",
+          "facebookLink": "http://muddywatersrestaurant.com/",
+          "twitterButton": true,
+          "twitterLabel": "Directions",
+          "twitterLink": "http://muddywatersrestaurant.com/contact-us/"
+        }
+      ],
+      "title": "Contact",
+      "addToNavigation": true,
+      "icon": "info"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "formView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "email",
+              "title": "Email",
+              "inputType": "email",
+              "placeholder": "example@example.com"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "username",
+              "title": "Username",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "password",
+              "title": "Password",
+              "inputType": "password"
+            }
+          ],
+          "name": "formViewModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Register",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "authenticationView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:authentication",
+          "name": "authenticationViewModel",
+          "dataProvider": "defaultProvider",
+          "emailLabel": "Email",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "homeView",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "homeView",
+          "gotoSigninLabel": "Sign In"
+        }
+      ],
+      "title": "Log In",
+      "addToNavigation": true,
+      "icon": "contacts"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "help",
+      "components": [],
+      "title": "Help",
+      "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "accountView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "date",
+              "title": "Date",
+              "inputType": "date"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "points",
+              "title": "Points",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "dropdownlist",
+              "title": "Label",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "username1",
+              "title": "Username",
+              "inputType": "text"
+            }
+          ],
+          "name": "accountViewModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Account",
+      "addToNavigation": false
     }
   ],
   "dataProviders": [
@@ -98,6 +206,6 @@
   ],
   "name": "kendoUiMobileApp",
   "navigation": "drawer",
-  "view": "homeView",
+  "view": "contacts",
   "skin": "flat"
 }

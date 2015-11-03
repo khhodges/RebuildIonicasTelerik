@@ -13,7 +13,7 @@
                 // and feel of the operating system
                 skin: 'flat',
                 // the application needs to know which view to load first
-                initial: 'components/homeView/view.html',
+                initial: 'components/contacts/view.html',
                 statusBarStyle: 'black-translucent'
             });
         });
