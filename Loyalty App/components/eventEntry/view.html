@@ -1,0 +1,29 @@
+<div data-role="view" data-title="Leave a Message" data-layout="main" data-model="app.eventEntry" data-show="app.eventEntry.onShow" data-after-show="app.eventEntry.afterShow">
+    <div id="eventEntryModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+
+                    <label>Username
+                        <input data-bind="value: eventEntryModel.fields.username2" placeholder="{{User}}" type="text">
+                    </label>
+
+                </li>
+                <li>
+
+                    <p id="message" data-bind="html: eventEntryModel.fields.message"></p>
+
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: eventEntryModel.cancel }">Cancel</a>
+                <a class="primary" data-role="button" data-bind="events: { click: eventEntryModel.submit }">Save</a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_eventEntryModel -->
+        <!-- END_CUSTOM_CODE_eventEntryModel -->
+    </div>
+    <!-- START_CUSTOM_CODE_eventEntry -->
+    <!-- END_CUSTOM_CODE_eventEntry -->
+</div>

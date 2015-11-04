@@ -11,10 +11,8 @@
           "appName": "Muddy Waters",
           "appVersion": "(954) 428-6577",
           "appIcon": "muddy-waters-logo3.jpg",
-          "appDescription": "Become a Loyalty Royalty member. It is easy and rewarding!!!\n                    Click Join and the next time you dine-in we will activate your Muddy Waters Loyalty Royalty card and start acquiring points for food and beverage purchases.\n                    Find out more below...",
-          "contactButton": true,
-          "contactLabel": "Log In",
-          "contactMail": "muddywaters@on2t.com",
+          "appDescription": "Become a Loyalty Royalty member. It is easy and rewarding!!! Simply Register and the next time you dine-in we will activate your Muddy Waters Loyalty Royalty card to start acquiring points for food, beverage and other purchases.\n                    Find out more below...",
+          "contactButton": false,
           "facebookButton": true,
           "facebookLabel": "Find us on Facebook",
           "facebookLink": "https://www.facebook.com/muddywatersrestaurant",
@@ -36,9 +34,10 @@
           "name": "dataListViewModel",
           "dataProvider": "defaultProvider",
           "collection": "Activities",
-          "iconField": true,
+          "iconField": false,
           "imageField": "Picture",
           "headerField": "Text",
+          "subHeaderField": "Text",
           "filterField": "Text",
           "masterDetails": true,
           "detailSubHeaderField": "Text",
@@ -66,11 +65,13 @@
         {
           "type": "kendo-ui-mobile:about",
           "name": "contactsModel",
-          "appName": "Visit Muddy Waters",
+          "appName": "Muddy Waters",
           "appVersion": "Telephone : 954-428-6577",
           "appIcon": "muddy-waters-logo2.jpg",
           "appDescription": "The best lobster, fresh seafood and the island vibe. With two separate dining areas, two unique bars, privacy or social interaction and Muddy's outside covered patio seating.\nW. HIllsboro Blvd.\nDeerfield, FL 33442\n\n\n\nFood: 11 a.m. – 10 p.m.\nWith a bar open till 2 A.M.",
-          "contactButton": false,
+          "contactButton": true,
+          "contactLabel": "Email us",
+          "contactMail": "muddywaters@on2t.com",
           "facebookButton": true,
           "facebookLabel": "Home Page",
           "facebookLink": "http://muddywatersrestaurant.com/",
@@ -79,45 +80,9 @@
           "twitterLink": "http://muddywatersrestaurant.com/contact-us/"
         }
       ],
-      "title": "Contact",
+      "title": "Visit Us",
       "addToNavigation": true,
       "icon": "info"
-    },
-    {
-      "type": "kendo-ui-mobile:view",
-      "name": "formView",
-      "components": [
-        {
-          "type": "kendo-ui-mobile:form",
-          "components": [
-            {
-              "type": "kendo-ui-mobile:field",
-              "name": "email",
-              "title": "Email",
-              "inputType": "email",
-              "placeholder": "example@example.com"
-            },
-            {
-              "type": "kendo-ui-mobile:field",
-              "name": "username",
-              "title": "Username",
-              "inputType": "text"
-            },
-            {
-              "type": "kendo-ui-mobile:field",
-              "name": "password",
-              "title": "Password",
-              "inputType": "password"
-            }
-          ],
-          "name": "formViewModel",
-          "submitButton": "Confirm",
-          "cancelButton": "Cancel"
-        }
-      ],
-      "title": "Register",
-      "addToNavigation": true,
-      "icon": "bookmarks"
     },
     {
       "type": "kendo-ui-mobile:view",
@@ -141,7 +106,7 @@
           "gotoSigninLabel": "Sign In"
         }
       ],
-      "title": "Log In",
+      "title": "Log In or Register",
       "addToNavigation": true,
       "icon": "contacts"
     },
@@ -150,7 +115,8 @@
       "name": "help",
       "components": [],
       "title": "Help",
-      "addToNavigation": false
+      "addToNavigation": true,
+      "icon": "bookmarks"
     },
     {
       "type": "kendo-ui-mobile:view",
@@ -191,6 +157,57 @@
       ],
       "title": "Account",
       "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "eventEntry",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "username2",
+              "title": "Username",
+              "inputType": "text",
+              "placeholder": "{{User}}"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "message",
+              "title": "Paragraph",
+              "inputType": "paragraph",
+              "value": "Enter a message"
+            }
+          ],
+          "name": "eventEntryModel",
+          "submitButton": "Save",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Leave a Message",
+      "addToNavigation": true,
+      "icon": "action"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "dataListView1",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:list",
+          "name": "dataListView1Model",
+          "dataProvider": "defaultProvider",
+          "collection": "Comments",
+          "headerField": "Comment",
+          "subHeaderField": "UserId",
+          "masterDetails": false,
+          "pullToRefresh": false,
+          "endlessScroll": true
+        }
+      ],
+      "title": "Data List",
+      "addToNavigation": true,
+      "icon": "organize"
     }
   ],
   "dataProviders": [
@@ -206,6 +223,6 @@
   ],
   "name": "kendoUiMobileApp",
   "navigation": "drawer",
-  "view": "contacts",
-  "skin": "flat"
+  "view": "homeView",
+  "skin": "native"
 }

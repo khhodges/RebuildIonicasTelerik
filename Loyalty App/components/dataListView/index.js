@@ -14,9 +14,8 @@ app.dataListView = kendo.observable({
                 var empty1x1png = 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQI12NgYAAAAAMAASDVlMcAAAAASUVORK5CYII=';
                 img = 'data:image/png;base64,' + empty1x1png;
             } else if (img.slice(0, 4) !== 'http' &&
-                img.slice(0, 2) !== '//' &&
-                img.slice(0, 5) !== 'data:') {
-                var setup = dataProvider.setup;
+                img.slice(0, 2) !== '//' && img.slice(0, 5) !== 'data:') {
+                var setup = dataProvider.setup || {};
                 img = setup.scheme + ':' + setup.url + setup.apiKey + '/Files/' + img + '/Download';
             }
 
@@ -33,7 +32,6 @@ app.dataListView = kendo.observable({
                 if (dataItem.hasOwnProperty(propName)) {
                     propValue = dataItem[propName];
                     if (isLocation(propValue)) {
-                        // Location type property
                         dataItem[propName] =
                             kendo.format('Latitude: {0}, Longitude: {1}',
                                 propValue.latitude, propValue.longitude);
@@ -70,10 +68,6 @@ app.dataListView = kendo.observable({
                             field: 'Picture',
                             defaultValue: ''
                         },
-                    },
-                    icon: function() {
-                        var i = 'globe';
-                        return kendo.format('km-icon km-{0}', i);
                     }
                 }
             },

@@ -7,22 +7,20 @@
     <link href="bower_components/kendo-ui-appbuilder-core/styles/kendo.mobile.all.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
 
-    <!-- cordova script (this will be a 404 during development if served with `grunt serve`) -->
     <script src="cordova.js"></script>
-
     <script src="bower_components/kendo-ui-appbuilder-core/js/jquery.min.js"></script>
     <script src="bower_components/kendo-ui-appbuilder-core/js/kendo.mobile.min.js"></script>
-    <script src="bower_components/everlive/min/everlive.all.min.js"></script>
-    <script src="lib/progress/progress.all.min.js"></script>
     <script src="app.js"></script>
+    <script src="bower_components/everlive/min/everlive.all.min.js"></script>
     <script src="dataProviders/defaultProvider.js"></script>
 </head>
 
 <body id="kendoUiMobileApp">
+    <script src="components/dataListView1/index.js"></script>
+    <script src="components/eventEntry/index.js"></script>
     <script src="components/accountView/index.js"></script>
     <script src="components/help/index.js"></script>
     <script src="components/authenticationView/index.js"></script>
-    <script src="components/formView/index.js"></script>
     <script src="components/contacts/index.js"></script>
     <script src="components/shirtSelection/index.js"></script>
     <script src="components/dataListView/index.js"></script>
@@ -58,9 +56,11 @@
             <li><a href="components/homeView/view.html" data-icon="home">Loyalty Club</a></li>
             <li><a href="components/dataListView/view.html" data-icon="search">Activities and Events</a></li>
             <li><a href="components/shirtSelection/view.html" data-icon="contacts">Products</a></li>
-            <li><a href="components/contacts/view.html" data-icon="info">Contact</a></li>
-            <li><a href="components/formView/view.html" data-icon="bookmarks">Register</a></li>
-            <li><a href="components/authenticationView/view.html" data-icon="contacts">Log In</a></li>
+            <li><a href="components/contacts/view.html" data-icon="info">Visit Us</a></li>
+            <li><a href="components/authenticationView/view.html" data-icon="contacts">Log In or Register</a></li>
+            <li><a href="components/help/view.html" data-icon="bookmarks">Help</a></li>
+            <li><a href="components/eventEntry/view.html" data-icon="action">Leave a Message</a></li>
+            <li><a href="components/dataListView1/view.html" data-icon="organize">Data List</a></li>
         </ul>
     </div>
     <!-- START_CUSTOM_CODE_kendoUiMobileApp -->

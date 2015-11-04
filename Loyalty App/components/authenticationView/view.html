@@ -1,4 +1,4 @@
-<div data-role="view" data-title="Log In" data-layout="main" data-model="app.authenticationView" data-show="app.authenticationView.onShow" data-after-show="app.authenticationView.afterShow">
+<div data-role="view" data-title="Log In or Register" data-layout="main" data-model="app.authenticationView" data-show="app.authenticationView.onShow" data-after-show="app.authenticationView.afterShow">
     <div class="signin-view">
         <form>
             <ul data-role="listview" data-style="inset">
@@ -46,12 +46,12 @@
                 <a data-role="button" data-bind="events: { click: authenticationViewModel.toggleView }">Sign In</a>
             </div>
         </form>
-        <!-- START_CUSTOM_CODE_authenticationViewModel -->
-        <!-- END_CUSTOM_CODE_authenticationViewModel -->
     </div>
     <div class="offline" align="center" style="display:none;">
         You are currently offline. Before using this app in offline mode you must initialize it while you are online
     </div>
+    <!-- START_CUSTOM_CODE_authenticationViewModel -->
+    <!-- END_CUSTOM_CODE_authenticationViewModel -->
     <!-- START_CUSTOM_CODE_authenticationView -->
     <!-- END_CUSTOM_CODE_authenticationView -->
 </div>
