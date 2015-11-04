@@ -10,7 +10,7 @@ app.eventEntry = kendo.observable({
 (function(parent) {
     var eventEntryModel = kendo.observable({
         fields: {
-            message: 'Enter a message',
+            username3: '',
             username2: '',
         },
         submit: function() {},

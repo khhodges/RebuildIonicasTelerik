@@ -64,6 +64,10 @@ app.dataListView = kendo.observable({
                             field: 'Text',
                             defaultValue: ''
                         },
+                        'Likes': {
+                            field: 'Likes',
+                            defaultValue: ''
+                        },
                         'Picture': {
                             field: 'Picture',
                             defaultValue: ''

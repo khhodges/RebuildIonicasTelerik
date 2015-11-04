@@ -11,14 +11,16 @@
                 </li>
                 <li>
 
-                    <p id="message" data-bind="html: eventEntryModel.fields.message"></p>
+                    <label>Username
+                        <input data-bind="value: eventEntryModel.fields.username3" placeholder="Enter your message" type="text">
+                    </label>
 
                 </li>
             </ul>
 
             <div class="button-group">
                 <a data-role="button" data-bind="events: { click: eventEntryModel.cancel }">Cancel</a>
-                <a class="primary" data-role="button" data-bind="events: { click: eventEntryModel.submit }">Save</a>
+                <a class="primary" data-role="button" data-bind="events: { click: eventEntryModel.submit }">Pick Image to Save</a>
             </div>
         </form>
         <!-- START_CUSTOM_CODE_eventEntryModel -->

@@ -37,7 +37,7 @@
           "iconField": false,
           "imageField": "Picture",
           "headerField": "Text",
-          "subHeaderField": "Text",
+          "subHeaderField": "Likes",
           "filterField": "Text",
           "masterDetails": true,
           "detailSubHeaderField": "Text",
@@ -174,14 +174,14 @@
             },
             {
               "type": "kendo-ui-mobile:field",
-              "name": "message",
-              "title": "Paragraph",
-              "inputType": "paragraph",
-              "value": "Enter a message"
+              "name": "username3",
+              "title": "Username",
+              "inputType": "text",
+              "placeholder": "Enter your message"
             }
           ],
           "name": "eventEntryModel",
-          "submitButton": "Save",
+          "submitButton": "Pick Image to Save",
           "cancelButton": "Cancel"
         }
       ],
