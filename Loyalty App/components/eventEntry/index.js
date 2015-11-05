@@ -6,6 +6,7 @@ app.eventEntry = kendo.observable({
 });
 
 // START_CUSTOM_CODE_eventEntry
+
 // END_CUSTOM_CODE_eventEntry
 (function(parent) {
     var eventEntryModel = kendo.observable({

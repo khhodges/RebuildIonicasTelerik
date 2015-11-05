@@ -1,7 +1,15 @@
 <div data-role="view" data-title="Data List" data-layout="main" data-model="app.dataListView1" data-show="app.dataListView1.onShow" data-after-show="app.dataListView1.afterShow">
     <!-- START_CUSTOM_CODE_dataListView1 -->
     <!-- END_CUSTOM_CODE_dataListView1 -->
+    <!--  Certain features like grouping and inset styling are not supported when endless scroll is enabled. -->
+    <ul data-role="listview" data-style="" data-template="dataListView1ModelTemplate" data-bind="{ source: dataListView1Model.dataSource}" data-pull-to-refresh="false" data-endless-scroll="true">
+    </ul>
+    <!-- START_CUSTOM_CODE_dataListView1Model -->
+    <!-- END_CUSTOM_CODE_dataListView1Model -->
+    <script type="text/x-kendo-template" id="dataListView1ModelTemplate">
+        <div class="image-with-text">
+            <h3>#: data['Comment'] #</h3>
+            <p>#: data['UserId'] #</p>
+        </div>
+    </script>
 </div>
-
-<!-- START_CUSTOM_CODE_dataListView1Model -->
-<!-- END_CUSTOM_CODE_dataListView1Model -->

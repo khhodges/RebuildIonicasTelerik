@@ -224,5 +224,5 @@
   "name": "kendoUiMobileApp",
   "navigation": "drawer",
   "view": "homeView",
-  "skin": "native"
+  "skin": "flat"
 }
