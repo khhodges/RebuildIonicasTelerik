@@ -174,14 +174,14 @@
             },
             {
               "type": "kendo-ui-mobile:field",
-              "name": "username3",
-              "title": "Username",
-              "inputType": "text",
-              "placeholder": "Enter your message"
+              "name": "message",
+              "title": "Paragraph",
+              "inputType": "paragraph",
+              "value": "Enter a message"
             }
           ],
           "name": "eventEntryModel",
-          "submitButton": "Pick Image to Save",
+          "submitButton": "Save",
           "cancelButton": "Cancel"
         }
       ],
@@ -224,5 +224,5 @@
   "name": "kendoUiMobileApp",
   "navigation": "drawer",
   "view": "homeView",
-  "skin": "flat"
+  "skin": "native"
 }

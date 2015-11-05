@@ -6,12 +6,11 @@ app.eventEntry = kendo.observable({
 });
 
 // START_CUSTOM_CODE_eventEntry
-
 // END_CUSTOM_CODE_eventEntry
 (function(parent) {
     var eventEntryModel = kendo.observable({
         fields: {
-            username3: '',
+            message: 'Enter a message',
             username2: '',
         },
         submit: function() {},
